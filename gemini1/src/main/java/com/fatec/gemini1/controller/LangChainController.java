@@ -19,12 +19,12 @@ public class LangChainController {
 
     @Autowired
     Assistant assistant;
-
+    //nao considera o contexto das mensagens
     @PostMapping("/chat-bot")
     public String chatBot(@RequestBody String message) {
         return chatLanguageModel.generate(message);
     }
-
+    //no assistant é possivel guardar informacoes anteriores
     @PostMapping("/assistant")
     public String assistant(@RequestBody String message) {
     	System.out.println(">>>>>>  assistente");

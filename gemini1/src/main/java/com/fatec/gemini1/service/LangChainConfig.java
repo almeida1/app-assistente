@@ -1,4 +1,4 @@
-package com.fatec.gemini1;
+package com.fatec.gemini1.service;
 
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.openai.OpenAiChatModel;
